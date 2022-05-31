@@ -123,3 +123,9 @@ dmypy.json
 data/
 models/
 
+vessel-ui/.idea/inspectionProfiles/profiles_settings.xml
+vessel-ui/.idea/inspectionProfiles/Project_Default.xml
+vessel-ui/.idea/misc.xml
+vessel-ui/.idea/modules.xml
+vessel-ui/.idea/vessel-ui.iml
+vessel-ui/.idea/vcs.xml
