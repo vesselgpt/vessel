@@ -129,3 +129,7 @@ vessel-ui/.idea/misc.xml
 vessel-ui/.idea/modules.xml
 vessel-ui/.idea/vessel-ui.iml
 vessel-ui/.idea/vcs.xml
+
+vessel-ui/node_modules
+vessel-ui/vessel/static/CACHE
+vessel-ui/vessel/static/src/output.css
