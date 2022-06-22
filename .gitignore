@@ -133,3 +133,4 @@ vessel-ui/.idea/vcs.xml
 vessel-ui/node_modules
 vessel-ui/vessel/static/CACHE
 vessel-ui/vessel/static/src/output.css
+vessel-ui/vessel/static/scripts/app.bundle.js
