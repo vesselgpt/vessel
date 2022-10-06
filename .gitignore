@@ -1,0 +1,14 @@
+
+.DS_Store
+vessel-ui/.idea/inspectionProfiles/profiles_settings.xml
+vessel-ui/.idea/inspectionProfiles/Project_Default.xml
+vessel-ui/.idea/misc.xml
+vessel-ui/.idea/modules.xml
+vessel-ui/.idea/vessel-ui.iml
+vessel-ui/tools/__pycache__/utilities.cpython-310.pyc
+vessel-ui/views/__pycache__/dashboard.cpython-310.pyc
+vessel-ui/views/__pycache__/data_annotation.cpython-310.pyc
+vessel-ui/views/__pycache__/data_extraction.cpython-310.pyc
+vessel-ui/views/__pycache__/model_training.cpython-310.pyc
+vessel-ui/views/__pycache__/model_tuning.cpython-310.pyc
+vessel-ui/views/__pycache__/settings.cpython-310.pyc
