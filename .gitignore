@@ -13,3 +13,4 @@ vessel-ui/views/__pycache__/model_training.cpython-310.pyc
 vessel-ui/views/__pycache__/model_tuning.cpython-310.pyc
 vessel-ui/views/__pycache__/settings.cpython-310.pyc
 vessel-ui/.idea/vcs.xml
+*.pyc
