@@ -14,3 +14,9 @@ vessel-ui/views/__pycache__/model_tuning.cpython-310.pyc
 vessel-ui/views/__pycache__/settings.cpython-310.pyc
 vessel-ui/.idea/vcs.xml
 *.pyc
+vessel-data/.idea/inspectionProfiles/profiles_settings.xml
+vessel-data/.idea/inspectionProfiles/Project_Default.xml
+vessel-data/.idea/misc.xml
+vessel-data/.idea/modules.xml
+vessel-data/.idea/vessel-data.iml
+vessel-data/.idea/vcs.xml
