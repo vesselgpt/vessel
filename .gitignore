@@ -1,10 +1,10 @@
 
 .DS_Store
-vessel-ui/.idea/inspectionProfiles/profiles_settings.xml
-vessel-ui/.idea/inspectionProfiles/Project_Default.xml
-vessel-ui/.idea/misc.xml
-vessel-ui/.idea/modules.xml
-vessel-ui/.idea/vessel-ui.iml
+vessel-ui/donut/.idea/inspectionProfiles/profiles_settings.xml
+vessel-ui/donut/.idea/inspectionProfiles/Project_Default.xml
+vessel-ui/donut/.idea/misc.xml
+vessel-ui/donut/.idea/modules.xml
+vessel-ui/donut/.idea/vessel-ui.iml
 vessel-ui/tools/__pycache__/utilities.cpython-310.pyc
 vessel-ui/views/__pycache__/dashboard.cpython-310.pyc
 vessel-ui/views/__pycache__/data_annotation.cpython-310.pyc
@@ -12,7 +12,7 @@ vessel-ui/views/__pycache__/data_extraction.cpython-310.pyc
 vessel-ui/views/__pycache__/model_training.cpython-310.pyc
 vessel-ui/views/__pycache__/model_tuning.cpython-310.pyc
 vessel-ui/views/__pycache__/settings.cpython-310.pyc
-vessel-ui/.idea/vcs.xml
+vessel-ui/donut/.idea/vcs.xml
 *.pyc
 vessel-data/donut/.idea/inspectionProfiles/profiles_settings.xml
 vessel-data/donut/.idea/inspectionProfiles/Project_Default.xml
@@ -60,3 +60,4 @@ vessel-ml/lemming/.idea/vcs.xml
 vessel-ml/lemming/.idea/workspace.xml
 vessel-ml/lemming/.idea/jupyter-settings.xml
 vessel-data/donut/.idea/jupyter-settings.xml
+vessel-ui/donut/.idea/jupyter-settings.xml
