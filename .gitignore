@@ -14,13 +14,13 @@ vessel-ui/views/__pycache__/model_tuning.cpython-310.pyc
 vessel-ui/views/__pycache__/settings.cpython-310.pyc
 vessel-ui/.idea/vcs.xml
 *.pyc
-vessel-data/.idea/inspectionProfiles/profiles_settings.xml
-vessel-data/.idea/inspectionProfiles/Project_Default.xml
-vessel-data/.idea/misc.xml
-vessel-data/.idea/modules.xml
-vessel-data/.idea/vessel-data.iml
-vessel-data/.idea/vcs.xml
-vessel-data/.idea/workspace.xml
+vessel-data/donut/.idea/inspectionProfiles/profiles_settings.xml
+vessel-data/donut/.idea/inspectionProfiles/Project_Default.xml
+vessel-data/donut/.idea/misc.xml
+vessel-data/donut/.idea/modules.xml
+vessel-data/donut/.idea/vessel-data.iml
+vessel-data/donut/.idea/vcs.xml
+vessel-data/donut/.idea/workspace.xml
 vessel-ml/.idea/inspectionProfiles/profiles_settings.xml
 vessel-ml/.idea/inspectionProfiles/Project_Default.xml
 vessel-ml/.idea/misc.xml
@@ -58,3 +58,4 @@ vessel-ml/lemming/.idea/misc.xml
 vessel-ml/lemming/.idea/modules.xml
 vessel-ml/lemming/.idea/vcs.xml
 vessel-ml/lemming/.idea/workspace.xml
+vessel-ml/lemming/.idea/jupyter-settings.xml
