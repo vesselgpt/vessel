@@ -63,3 +63,4 @@ vessel-ml/llm/.idea/copilot/chatSessions/00000000000.xd
 vessel-ml/llm/.env_haystack/
 vessel-ml/llm/.env_llamaindex/
 vessel-ml/llm/.env_instructor/
+vessel-data/ocr/.env_ocr/
