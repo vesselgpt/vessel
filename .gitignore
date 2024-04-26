@@ -65,3 +65,13 @@ vessel-ml/llm/.env_llamaindex/
 vessel-ml/llm/.env_instructor/
 vessel-ml/llm/.env_unstructured/
 vessel-data/ocr/.env_ocr/
+vessel-data/parse/.env_parse
+vessel-data/parse/.idea/inspectionProfiles/profiles_settings.xml
+vessel-data/parse/.idea/inspectionProfiles/Project_Default.xml
+vessel-data/parse/.idea/misc.xml
+vessel-data/parse/.idea/modules.xml
+vessel-data/parse/.idea/parse.iml
+vessel-data/parse/.idea/vcs.xml
+vessel-data/parse/dist/vessel_parse-0.1.7-py3-none-any.whl
+vessel-data/parse/dist/vessel_parse-0.1.7.tar.gz
+vessel-data/parse/poetry.lock
