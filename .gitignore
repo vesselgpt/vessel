@@ -75,3 +75,7 @@ vessel-data/parse/.idea/vcs.xml
 vessel-data/parse/dist/vessel_parse-0.1.7-py3-none-any.whl
 vessel-data/parse/dist/vessel_parse-0.1.7.tar.gz
 vessel-data/parse/poetry.lock
+vessel-data/parse/.env_vessel_parse
+vessel-data/parse/build
+vessel-data/parse/dist
+vessel-data/parse/vessel_parse.egg-info
