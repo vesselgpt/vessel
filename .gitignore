@@ -81,3 +81,5 @@ vessel-data/parse/dist
 vessel-data/parse/vessel_parse.egg-info
 /vessel-ml/infra/infra/.env_infra
 /vessel-ml/infra/infra/.idea
+/vessel-ml/infra/.env_infra
+/vessel-ml/infra/.idea
