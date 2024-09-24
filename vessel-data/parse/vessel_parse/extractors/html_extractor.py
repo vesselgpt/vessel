@@ -220,8 +220,8 @@ class HTMLExtractor(object):
 
 
 if __name__ == "__main__":
-    # to run for debugging, navigate to vessel_parse and run the following command:
-    # python -m extractors.html_extractor
+    # to run for debugging, navigate above vessel_parse and run the following command:
+    # python -m vessel_parse.extractors.html_extractor
 
     # with open('data/invoice_1_table.txt', 'r') as file:
     #     file_content = file.read()
