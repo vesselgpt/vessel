@@ -64,6 +64,7 @@ vessel-ml/llm/.env_haystack/
 vessel-ml/llm/.env_llamaindex/
 vessel-ml/llm/.env_instructor/
 vessel-ml/llm/.env_unstructured/
+vessel-ml/llm/.env_vessel_parse/
 vessel-data/ocr/.env_ocr/
 vessel-data/parse/.env_parse
 vessel-data/parse/.idea/inspectionProfiles/profiles_settings.xml
