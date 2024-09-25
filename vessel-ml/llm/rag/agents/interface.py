@@ -53,6 +53,9 @@ def get_pipeline(agent_name: str) -> Pipeline:
     elif agent_name == "unstructured":
         from rag.agents.unstructured.unstructured import UnstructuredPipeline
         return UnstructuredPipeline()
+    elif agent_name == "vessel-parse":
+        from rag.agents.vessel_parse.vessel_parse import VesselParsePipeline
+        return VesselParsePipeline()
     else:
         raise ValueError(f"Unknown agent: {agent_name}")
 
