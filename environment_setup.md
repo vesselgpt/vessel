@@ -60,13 +60,10 @@ After adding these lines, restart your terminal or source your profile script wi
 
 ```
 python -m venv .env_vessel_parse
-python -m venv .env_llamaindex
-python -m venv .env_haystack
 python -m venv .env_instructor
-python -m venv .env_unstructured
 ```
 
-`.env_llamaindex` is used for LLM RAG with `llamaindex`, `vllamaindex` and `vprocessor` agents, `.env_haystack` is used for LLM RAG with `haystack` agent, and `.env_instructor` is used for LLM function calling with `fcall` agent and for `instructor` RAG agent. `.env_unstructured` is used for `unstructured-light` and `unstructured` agents. `.env_vessel_parse` is used for `vessel-parse` agent.
+`.env_vessel_parse` is used for `vessel-parse` agent. `.env_instructor` is used for LLM function calling with `fcall` agent and for `instructor` RAG agent.
 
 2. Create virtual environment in `vessel-data/ocr` folder, only if you plan to run OCR service:
 
@@ -92,4 +89,4 @@ source .env_vessel_parse/bin/activate
 pip install -r requirements_vessel_parse.txt
 ```
 
-Repeat the same for `llamaindex`, `haystack`, `instructor` and `unstructured` environments.
+Repeat the same for `instructor` environments.
