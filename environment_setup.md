@@ -1,4 +1,4 @@
-- **Python environment setup** 
+**Python environment setup** 
 
 *Setup Python Environment (Vessel is tested with Python 3.10.4) with `pyenv`:*
 
@@ -54,7 +54,7 @@ eval "$(pyenv init -)"
 
 After adding these lines, restart your terminal or source your profile script with `source ~/.bash_profile` (or the appropriate file for your shell).
 
-*Create Virtual Environments to Run Vessel Agents*
+**Create Virtual Environments to Run Vessel Agents**
 
 1. Create virtual environments in `vessel-ml/llm` folder:
 
