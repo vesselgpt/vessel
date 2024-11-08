@@ -63,7 +63,7 @@ python -m venv .env_vessel_parse
 python -m venv .env_instructor
 ```
 
-`.env_vessel_parse` is used for `vessel-parse` agent. `.env_instructor` is used for LLM function calling with `fcall` agent and for `instructor` RAG agent.
+`.env_vessel_parse` is used for `vessel-parse` agent. `.env_instructor` is used for LLM function calling with `stocks` agent.
 
 2. Create virtual environment in `vessel-data/ocr` folder, only if you plan to run OCR service:
 
