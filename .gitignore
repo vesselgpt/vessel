@@ -86,4 +86,5 @@ vessel-data/parse/vessel_parse.egg-info
 /vessel-ml/infra/.idea
 vessel-ml/llm/.env
 vessel-ui/shell/.env_shell
+vessel-ui/shell/.env_vessel_ui_shell
 /vessel-ui/shell/.idea
