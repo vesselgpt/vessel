@@ -20,11 +20,21 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 # If you are using Hugging Face GPU - set HF_TOKEN in .env file to the value of your Hugging Face API token
 load_dotenv()
 
-# Import config vars
-with open('config.yml', 'r', encoding='utf8') as ymlfile:
-    cfg = box.Box(yaml.safe_load(ymlfile))
 
-# add asyncio to the pipeline
+# Function to load configuration
+def load_config(file_path='config.yml'):
+    with open(file_path, 'r', encoding='utf8') as ymlfile:
+        return box.Box(yaml.safe_load(ymlfile))
+
+# Function to save configuration
+def save_config(cfg, file_path='config.yml'):
+    with open(file_path, 'w', encoding='utf8') as ymlfile:
+        yaml.safe_dump(cfg.to_dict(), ymlfile)
+
+# Load configuration
+config_path = 'config.yml'
+cfg = load_config(config_path)
+
 
 app = FastAPI(openapi_url="/api/v1/vessel-llm/openapi.json", docs_url="/api/v1/vessel-llm/docs")
 
@@ -55,12 +65,34 @@ async def inference(
 
     protected_access = cfg.PROTECTED_ACCESS
     if protected_access:
-        # Retrieve all environment variables that start with 'SPARROW_KEY_'
-        vessel_keys = {key: value for key, value in os.environ.items() if key.startswith('SPARROW_KEY_')}
+        # Retrieve all vessel keys from the config file
+        vessel_keys = cfg.get('SPARROW_KEYS', {})
 
-        # Check if the provided vessel_key matches any of the environment variables
-        if vessel_key not in vessel_keys.values():
+        # Validate and log usage
+        key_found = False
+        for key, data in vessel_keys.items():
+            if data['value'] == vessel_key:
+                key_found = True
+
+                # Check if usage is within the allowed limit
+                usage_count = data.get('usage_count', 0)
+                usage_limit = data.get('usage_limit', float('inf'))  # Default to no limit if not set
+
+                if usage_count >= usage_limit:
+                    raise HTTPException(
+                        status_code=403,
+                        detail=f"Usage limit exceeded for key '{vessel_key}'. Allowed limit: {usage_limit}."
+                    )
+
+                # Increment the usage count
+                data['usage_count'] = usage_count + 1
+                break
+
+        if not key_found:
             raise HTTPException(status_code=403, detail="Protected access. Agent not allowed.")
+
+        # Save updated configuration back to the file
+        save_config(cfg, config_path)
 
     options_arr = [param.strip() for param in options.split(',')] if options is not None else None
 
