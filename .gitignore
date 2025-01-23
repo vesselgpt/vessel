@@ -88,3 +88,4 @@ vessel-ml/llm/.env
 vessel-ui/shell/.env_shell
 vessel-ui/shell/.env_vessel_ui_shell
 /vessel-ui/shell/.idea
+vessel-ui/shell/GeoLite2-Country.mmdb
