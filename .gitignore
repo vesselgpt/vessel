@@ -89,3 +89,8 @@ vessel-ui/shell/.env_shell
 vessel-ui/shell/.env_vessel_ui_shell
 /vessel-ui/shell/.idea
 vessel-ui/shell/GeoLite2-Country.mmdb
+vessel-ml/agents/.idea/agents.iml
+vessel-ml/agents/.idea/inspectionProfiles/profiles_settings.xml
+vessel-ml/agents/.idea/misc.xml
+vessel-ml/agents/.idea/modules.xml
+vessel-ml/agents/.idea/vcs.xml
