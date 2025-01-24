@@ -12,7 +12,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 class Pipeline(ABC):
     @abstractmethod
     def run_pipeline(self,
-                     agent: str,
+                     pipeline: str,
                      query: str,
                      file_path: str,
                      options: List[str] = None,
@@ -24,13 +24,13 @@ class Pipeline(ABC):
 
 
 # Factory Method
-def get_pipeline(agent_name: str) -> Pipeline:
-    if agent_name == "vessel-parse":
-        from rag.agents.vessel_parse.vessel_parse import VesselParsePipeline
+def get_pipeline(pipeline_name: str) -> Pipeline:
+    if pipeline_name == "vessel-parse":
+        from pipelines.vessel_parse.vessel_parse import VesselParsePipeline
         return VesselParsePipeline()
-    elif agent_name == "stocks":
-        from rag.agents.instructor.stocks import Stocks
+    elif pipeline_name == "stocks":
+        from pipelines.instructor.stocks import Stocks
         return Stocks()
     else:
-        raise ValueError(f"Unknown agent: {agent_name}")
+        raise ValueError(f"Unknown pipeline: {pipeline_name}")
 

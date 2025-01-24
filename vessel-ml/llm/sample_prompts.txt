@@ -1,4 +1,4 @@
-./vessel.sh assistant --agent "fcall" --query "Exxon"
+./vessel.sh assistant --pipeline "fcall" --query "Exxon"
 
 {
   "company": "ExxonMobil",
@@ -12,14 +12,14 @@ Time to retrieve answer: 16.426633964991197
 \"seller_taxid\":\"example\", \"seller_iban\":\"example\", \"client_name\":\"example\", \"client_address\":\"example\",
 \"client_taxid\":\"example\", \"invoice_items\":[{\"description\":\"example\", \"quantity\":0.00, \"net_price\":0.00,
 \"net_worth\":0.00, \"vat\":\"example\", \"gross_worth\":0.00}], \"invoice_summary\":[{\"net_worth\":0.00, \"vat\":0.00, \"gross_worth\":0.00}]}"
---agent "vessel-parse" --debug --options mlx --options mlx-community/Qwen2-VL-72B-Instruct-4bit --file-path "/Users/dldiego1/Work/vessel-git/vessel/vessel-ml/llm/data/invoice_1.jpg"
+--pipeline "vessel-parse" --debug --options mlx --options mlx-community/Qwen2-VL-72B-Instruct-4bit --file-path "/Users/dldiego1/Work/vessel-git/vessel/vessel-ml/llm/data/invoice_1.jpg"
 
 
 ./vessel.sh "{\"invoice_no\":\"example\", \"invoice_date\":\"example\", \"seller_name\":\"example\", \"seller_address\":\"example\",
 \"seller_taxid\":\"example\", \"seller_iban\":\"example\", \"client_name\":\"example\", \"client_address\":\"example\",
 \"client_taxid\":\"example\", \"invoice_items\":[{\"description\":\"example\", \"quantity\":0.00, \"net_price\":0.00,
 \"net_worth\":0.00, \"vat\":\"example\", \"gross_worth\":0.00}], \"invoice_summary\":[{\"net_worth\":0.00, \"vat\":0.00, \"gross_worth\":0.00}]}"
---agent "vessel-parse" --debug --options huggingface --options vesselgpt/vessel-qwen2-vl-7b --file-path "/Users/dldiego1/Work/vessel-git/vessel/vessel-ml/llm/data/invoice_1.jpg"
+--pipeline "vessel-parse" --debug --options huggingface --options vesselgpt/vessel-qwen2-vl-7b --file-path "/Users/dldiego1/Work/vessel-git/vessel/vessel-ml/llm/data/invoice_1.jpg"
 
 {
   "invoice_no": "61356291",
@@ -77,11 +77,11 @@ Time to retrieve answer: 16.426633964991197
 Time to retrieve answer: 47.84319644900097
 
 
-./vessel.sh "[{\"instrument_name\":\"example\", \"valuation\":0}]" --agent "vessel-parse" --debug --options mlx
+./vessel.sh "[{\"instrument_name\":\"example\", \"valuation\":0}]" --pipeline "vessel-parse" --debug --options mlx
 --options mlx-community/Qwen2-VL-72B-Instruct-4bit --file-path "/Users/dldiego1/Work/vessel-git/vessel/vessel-ml/llm/data/bonds_table.png"
 
 
-./vessel.sh "[{\"instrument_name\":\"example\", \"valuation\":0}]" --agent "vessel-parse" --debug --options huggingface
+./vessel.sh "[{\"instrument_name\":\"example\", \"valuation\":0}]" --pipeline "vessel-parse" --debug --options huggingface
 --options vesselgpt/vessel-qwen2-vl-7b --file-path "/Users/dldiego1/Work/vessel-git/vessel/vessel-ml/llm/data/bonds_table.png"
 
 [
@@ -110,7 +110,7 @@ Time to retrieve answer: 47.84319644900097
 Time to retrieve answer: 22.78700271800335
 
 
-./vessel.sh "*" --agent "vessel-parse" --debug --options mlx --options mlx-community/Qwen2-VL-72B-Instruct-4bit
+./vessel.sh "*" --pipeline "vessel-parse" --debug --options mlx --options mlx-community/Qwen2-VL-72B-Instruct-4bit
 --crop-size 60 --file-path "/Users/dldiego1/Work/vessel-git/vessel/vessel-ml/llm/data/invoice_1.pdf"
 
 {
