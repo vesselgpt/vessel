@@ -310,7 +310,7 @@ def run_inference(file_filepath, query, key, options, crop_size):
         return {"error": f"No query provided. Please enter a query before submitting."}
 
     if key is None or key.strip() == "":
-        return {"error": f"No Vessel Key provided. Please enter a Vessel Key before submitting."}
+        return {"error": f"Vessel Key required. To obtain your key, please contact us through https://vesselgpt.io/page-contacts.html"}
 
     file_path = None
     try:
